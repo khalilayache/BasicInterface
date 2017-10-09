@@ -1,4 +1,10 @@
 <resources>
   <string name="app_name">Basic User Interface Project</string>
   <string name="logo_99">Logo 99</string>
+  <string name="about_company">Fundada em 2012, e conhecida inicialmente como 99 Táxi, a empresa surgiu como um aplicativo que conectava taxistas com passageiros. Eventualmente, a empresa começa o serviço \'99POP\', com o objetivo de concorrer com outras empresas, como a Uber, que não utilizava taxistas, mas motoristas comuns. </string>
+  <string name="about">Sobre</string>
+  <string name="phone_company">(11) 94733–1589</string>
+  <string name="address_company">Av. dos Bandeirantes, 460 – Brooklin Paulista São Paulo – SP 03178–200</string>
+  <string name="name_company">99</string>
+  <string name="front_company">Foto da frente da empresa</string>
 </resources>

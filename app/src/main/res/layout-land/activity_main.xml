@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.khalilayache.basicuserinterfaceproject.MainActivity">
+
+  <ImageView
+      android:id="@+id/topBar"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      app:srcCompat="@drawable/logo_yellow"
+      android:background="@color/colorPrimary"
+      android:adjustViewBounds="false"
+      android:contentDescription="@string/logo_99"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:baselineAligned="false"
+      android:orientation="horizontal"
+      android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+      <ImageView
+          android:id="@+id/bannerPhoto"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:scaleType="centerCrop"
+          android:contentDescription="@string/front_company"
+          app:srcCompat="@drawable/front99"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/aboutText"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:overScrollMode="never"
+        android:scrollbars="horizontal">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/companyLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="16dp"
+            android:gravity="center|start"
+            android:textAlignment="textStart"
+            android:drawableStart="@drawable/location"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="@string/address_company"/>
+
+        <TextView
+            android:id="@+id/companyPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:drawablePadding="16dp"
+            android:gravity="center|start"
+            android:textAlignment="textStart"
+            android:drawableStart="@drawable/phone"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:text="@string/phone_company"/>
+
+        <TextView
+            android:id="@+id/aboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="@string/about"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:text="@string/about_company"/>
+
+      </LinearLayout>
+
+    </ScrollView>
+
+  </LinearLayout>
+
+</LinearLayout>
